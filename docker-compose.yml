@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  fe2_calendar:
+    image: darkphnx/ical-filter-proxy:latest
+    container_name: fe2_calendar
+    ports:
+      - "8000:8000"
+    restart: always
+    volumes:
+      - ./config.yml:/app/config.yml:ro
