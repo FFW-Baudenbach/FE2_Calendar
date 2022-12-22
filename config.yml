@@ -1,12 +1,12 @@
-# Voraussetzung: 1 Kalender mit Übungen und sonstigen Aktivitäten
+# Wir haben einen Google-Kalender mit allen Terminen der Feuerwehr (Übungen, Vereinsaktivitäten, ...)
+# Wir haben in der aktiven Wehr zwei Löschzüge
 # Jeder soll jeden Termin genau einmal im aPager haben
-# Jeder soll nur die Benachrichtigungen bekommen, die für ihn relevant sind (je nach Zug-Zugehörigkeit)
-
+# Jeder soll nur die Übungsbenachrichtigungen bekommen, die für ihn relevant sind (je nach Zug-Zugehörigkeit)
 
 # Kriterium Übung: Das Wort Übung kommt vor
-# Kriterium 1. Zug: Endet auf 'Zug 1'
-# Kriterium 2. Zug: Endet auf 'Zug 2'
-# Kriterium Gemeinschaftsübung: Das Wort Übung kommt vor, es endet aber nicht auf 'Zug 1' oder 'Zug 2'
+# Kriterium 1. Zug: Das Wort Übung kommt vor, endet auf 'Zug 1'
+# Kriterium 2. Zug: Das Wort Übung kommt vor, endet auf 'Zug 2'
+# Kriterium Gemeinschaftsübung: Das Wort Übung kommt vor, endet nicht auf 'Zug 1' oder 'Zug 2'
 
 # Kalender ohne Übungen und ohne Benachrichtigungen
 ffw_no_drills_no_alarms:
