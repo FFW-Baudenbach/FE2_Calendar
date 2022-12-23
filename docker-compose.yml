@@ -8,5 +8,5 @@ services:
       - "8000:8000"
     restart: always
     environment:
-      - API_KEY=<yourapikey>
-      - ICAL_URL=<calendarurl>
+      - ICAL_FILTER_PROXY_API_KEY=<yourapikey>
+      - ICAL_FILTER_PROXY_ICAL_URL=<calendarurl>

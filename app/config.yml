@@ -10,9 +10,9 @@
 
 # Kalender ohne Übungen und ohne Benachrichtigungen
 ffw_no_drills_no_alarms:
-   ical_url: #{ICAL_URL}
-   api_key: #{API_KEY}
-   timezone: #{TZ}
+   ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
+   api_key: ${ICAL_FILTER_PROXY_API_KEY}
+   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    rules:
      - field: summary
        operator: not-matches
@@ -22,9 +22,9 @@ ffw_no_drills_no_alarms:
 
 # Kalender mit Übungen für die gesamte Wehr mit Benachrichtigungen
 ffw_only_collective_drills_with_alarms:
-   ical_url: #{ICAL_URL}
-   api_key: #{API_KEY}
-   timezone: #{TZ}
+   ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
+   api_key: ${ICAL_FILTER_PROXY_API_KEY}
+   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    rules:
      - field: summary
        operator: matches
@@ -40,9 +40,9 @@ ffw_only_collective_drills_with_alarms:
 
 # Kalender mit Übungen für den ersten Zug mit Benachrichtigungen
 ffw_drills_brigade_1_with_alarms:
-   ical_url: #{ICAL_URL}
-   api_key: #{API_KEY}
-   timezone: #{TZ}
+   ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
+   api_key: ${ICAL_FILTER_PROXY_API_KEY}
+   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    rules:
      - field: summary
        operator: matches
@@ -58,9 +58,9 @@ ffw_drills_brigade_1_with_alarms:
        
 # Kalender mit Übungen für den ersten Zug ohne Benachrichtigungen
 ffw_drills_brigade_1_no_alarms:
-   ical_url: #{ICAL_URL}
-   api_key: #{API_KEY}
-   timezone: #{TZ}
+   ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
+   api_key: ${ICAL_FILTER_PROXY_API_KEY}
+   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    rules:
      - field: summary
        operator: matches
@@ -73,9 +73,9 @@ ffw_drills_brigade_1_no_alarms:
        
 # Kalender mit Übungen für den zweiten Zug mit Benachrichtigungen
 ffw_drills_brigade_2_with_alarms:
-   ical_url: #{ICAL_URL}
-   api_key: #{API_KEY}
-   timezone: #{TZ}
+   ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
+   api_key: ${ICAL_FILTER_PROXY_API_KEY}
+   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    rules:
      - field: summary
        operator: matches
@@ -91,9 +91,9 @@ ffw_drills_brigade_2_with_alarms:
        
 # Kalender mit Übungen für den zweiten Zug ohne Benachrichtigungen
 ffw_drills_brigade_2_no_alarms:
-   ical_url: #{ICAL_URL}
-   api_key: #{API_KEY}
-   timezone: #{TZ}
+   ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
+   api_key: ${ICAL_FILTER_PROXY_API_KEY}
+   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    rules:
      - field: summary
        operator: matches
