@@ -5,7 +5,7 @@ services:
     image: odin568/fe2_calendar:latest
     container_name: fe2_calendar
     ports:
-      - "8000:8000"
+      - "8084:8000"
     restart: always
     environment:
       - ICAL_FILTER_PROXY_API_KEY=<yourapikey>
