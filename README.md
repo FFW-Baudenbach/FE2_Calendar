@@ -13,11 +13,11 @@ The following PRs were created to enable this project:
 
 ## How it works
 This repository builds a docker container on DockerHub:
-* Based on latest version of ```ical-filter-proxy```
+* Based on latest version of ```ical-filter-proxy``` container
 * Added our specific [config.yml](app/config.yml)
 * Added default environment variables
 
 ## How to use
 * Download latest [docker-compose.yml](https://github.com/odin568/FE2_Calendar/releases).
-* Adjust `API_TOKEN` and `ICAL_URL` variables
+* Adjust `ICAL_FILTER_PROXY_API_KEY` and `ICAL_FILTER_PROXY_ICAL_URL` variables
 * Start container with ```docker-compose up -d```
