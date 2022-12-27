@@ -3,10 +3,19 @@
 # Jeder soll jeden Termin genau einmal im aPager haben
 # Jeder soll nur die Übungsbenachrichtigungen bekommen, die für ihn relevant sind (je nach Zug-Zugehörigkeit)
 
-# Kriterium Übung: Das Wort Übung kommt vor
-# Kriterium 1. Zug: Das Wort Übung kommt vor, endet auf 'Zug 1'
-# Kriterium 2. Zug: Das Wort Übung kommt vor, endet auf 'Zug 2'
-# Kriterium Gemeinschaftsübung: Das Wort Übung kommt vor, endet nicht auf 'Zug 1' oder 'Zug 2'
+##### Terminpattern #####
+
+## Gruppenübung Zug 1 Gruppe 1
+## Gruppenübung Zug 1 Gruppe 2
+## Zugübung Zug 1
+
+## Gruppenübung Zug 2 Gruppe 3
+## Gruppenübung Zug 2 Gruppe 4
+## Zugübung Zug 2
+
+## Gemeinschaftsübung
+
+#########################
 
 # Kalender ohne Übungen und ohne Benachrichtigungen
 ffw_no_drills_no_alarms:
@@ -28,10 +37,7 @@ ffw_only_collective_drills_with_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/übung/i'
-     - field: summary
-       operator: not-matches
-       val: '/zug [12]$/i'
+       val: '/gemeinschaftsübung/i'
    alarms:
      clear_existing: true
      triggers:
@@ -46,10 +52,10 @@ ffw_drills_brigade_1_with_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/übung/i'
+       val: '/(gruppen|zug)übung/i'
      - field: summary
        operator: matches
-       val: '/zug 1$/i'
+       val: '/zug 1/i'
    alarms:
      clear_existing: true
      triggers:
@@ -64,10 +70,10 @@ ffw_drills_brigade_1_no_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/übung/i'
+       val: '/(gruppen|zug)übung/i'
      - field: summary
        operator: matches
-       val: '/zug 1$/i'
+       val: '/zug 1/i'
    alarms:
      clear_existing: true
        
@@ -79,10 +85,10 @@ ffw_drills_brigade_2_with_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/übung/i'
+       val: '/(gruppen|zug)übung/i'
      - field: summary
        operator: matches
-       val: '/zug 2$/i'
+       val: '/zug 2/i'
    alarms:
      clear_existing: true
      triggers:
@@ -97,9 +103,9 @@ ffw_drills_brigade_2_no_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/übung/i'
+       val: '/(gruppen|zug)übung/i'
      - field: summary
        operator: matches
-       val: '/zug 2$/i'
+       val: '/zug 2/i'
    alarms:
      clear_existing: true
