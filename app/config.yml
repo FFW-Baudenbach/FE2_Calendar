@@ -5,15 +5,15 @@
 
 ##### Terminpattern #####
 
-## Gruppenübung Zug 1 Gruppe 1
-## Gruppenübung Zug 1 Gruppe 2
-## Zugübung Zug 1
+## Übung Zug 1 Gruppe 1
+## Übung Zug 1 Gruppe 2
+## Übung Zug 1
 
-## Gruppenübung Zug 2 Gruppe 3
-## Gruppenübung Zug 2 Gruppe 4
-## Zugübung Zug 2
+## Übung Zug 2 Gruppe 3
+## Übung Zug 2 Gruppe 4
+## Übung Zug 2
 
-## Gemeinschaftsübung
+## Übung Zug 1 und Zug 2
 
 #########################
 
@@ -37,7 +37,13 @@ ffw_only_collective_drills_with_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/gemeinschaftsübung/i'
+       val: '/übung/i'
+     - field: summary
+       operator: matches
+       val: '/zug 1/i'
+     - field: summary
+       operator: matches
+       val: '/zug 2/i'
    alarms:
      clear_existing: true
      triggers:
@@ -52,10 +58,13 @@ ffw_drills_brigade_1_with_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/(gruppen|zug)übung/i'
+       val: '/übung/i'
      - field: summary
        operator: matches
        val: '/zug 1/i'
+     - field: summary
+       operator: not-matches
+       val: '/zug 2/i'
    alarms:
      clear_existing: true
      triggers:
@@ -70,10 +79,13 @@ ffw_drills_brigade_1_no_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/(gruppen|zug)übung/i'
+       val: '/übung/i'
      - field: summary
        operator: matches
        val: '/zug 1/i'
+     - field: summary
+       operator: not-matches
+       val: '/zug 2/i'
    alarms:
      clear_existing: true
        
@@ -85,10 +97,13 @@ ffw_drills_brigade_2_with_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/(gruppen|zug)übung/i'
+       val: '/übung/i'
      - field: summary
        operator: matches
        val: '/zug 2/i'
+     - field: summary
+       operator: not-matches
+       val: '/zug 1/i'
    alarms:
      clear_existing: true
      triggers:
@@ -103,9 +118,12 @@ ffw_drills_brigade_2_no_alarms:
    rules:
      - field: summary
        operator: matches
-       val: '/(gruppen|zug)übung/i'
+       val: '/übung/i'
      - field: summary
        operator: matches
        val: '/zug 2/i'
+     - field: summary
+       operator: not-matches
+       val: '/zug 1/i'
    alarms:
      clear_existing: true
