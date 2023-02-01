@@ -80,7 +80,7 @@ ffw_only_collective_drills_with_alarms:
        - 1 day
        - 5 days
        
-# Kalender mit speziellen Übungen außerhalb von Zugübungen
+# Kalender mit speziellen Übungen außerhalb von Zug- und Jugendübungen
 ffw_only_special_drills_with_alarms:
    ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
    api_key: ${ICAL_FILTER_PROXY_API_KEY}
@@ -95,6 +95,9 @@ ffw_only_special_drills_with_alarms:
      - field: summary
        operator: not-matches
        val: '/zug 2/i'
+     - field: summary
+       operator: not-matches
+       val: '/jugend/i'
    alarms:
      clear_existing: true
      triggers:
