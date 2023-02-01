@@ -1,9 +1,11 @@
 # Wir haben einen Google-Kalender mit allen Terminen der Feuerwehr (Übungen, Vereinsaktivitäten, ...)
-# Wir haben in der aktiven Wehr zwei Löschzüge
+# Wir haben in der aktiven Wehr zwei Löschzüge, sowie eine Jugendgruppe
 # Jeder soll jeden Termin genau einmal im aPager haben
 # Jeder soll nur die Übungsbenachrichtigungen bekommen, die für ihn relevant sind (je nach Zug-Zugehörigkeit)
 
 ##### Terminpattern #####
+
+## Jugendübung
 
 ## Übung Zug 1 Gruppe 1
 ## Übung Zug 1 Gruppe 2
@@ -16,6 +18,32 @@
 ## Übung Zug 1 und Zug 2
 
 #########################
+
+# Kalender mit Jugendübungen ohne Benachrichtigungen
+ffw_youth_drills_no_alarms:
+   ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
+   api_key: ${ICAL_FILTER_PROXY_API_KEY}
+   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
+   rules:
+     - field: summary
+       operator: equals
+       val: 'Jugendübung'
+   alarms:
+     clear_existing: true
+     
+# Kalender mit Jugendübungen mit Benachrichtigungen
+ffw_youth_drills_no_alarms:
+   ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
+   api_key: ${ICAL_FILTER_PROXY_API_KEY}
+   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
+   rules:
+     - field: summary
+       operator: equals
+       val: 'Jugendübung'
+   alarms:
+     clear_existing: true
+     triggers:
+       - 1 hour     
 
 # Kalender ohne Übungen und ohne Benachrichtigungen
 ffw_no_drills_no_alarms:
