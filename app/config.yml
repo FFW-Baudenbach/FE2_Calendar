@@ -32,7 +32,7 @@ ffw_youth_drills_no_alarms:
      clear_existing: true
      
 # Kalender mit Jugendübungen mit Benachrichtigungen
-ffw_youth_drills_no_alarms:
+ffw_youth_drills_with_alarms:
    ical_url: ${ICAL_FILTER_PROXY_ICAL_URL}
    api_key: ${ICAL_FILTER_PROXY_API_KEY}
    timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
