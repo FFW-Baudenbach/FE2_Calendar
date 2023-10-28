@@ -10,6 +10,8 @@ The following PRs were created to enable this project:
 * [#28](https://github.com/darkphnx/ical-filter-proxy/pull/28)
 * [#29](https://github.com/darkphnx/ical-filter-proxy/pull/29)
 * [#30](https://github.com/darkphnx/ical-filter-proxy/pull/30)
+* [#31](https://github.com/darkphnx/ical-filter-proxy/pull/31)
+* [#32](https://github.com/darkphnx/ical-filter-proxy/pull/32)
 
 ## How it works
 This repository builds a docker container on DockerHub:
