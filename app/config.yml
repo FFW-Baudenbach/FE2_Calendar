@@ -181,3 +181,8 @@ ffw_drills_brigade_2_no_alarms:
        val: '/zug 1/i'
    alarms:
      clear_existing: true
+
+# Test mit Firemanager
+firemanager_all:
+  ical_url: https://www.firemanager.de/portal/kalender/NOvF2I8oNA.ics
+  timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
