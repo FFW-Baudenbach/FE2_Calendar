@@ -87,3 +87,10 @@ ffw_drills_brigade_2_no_alarms:
    timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    alarms:
      clear_existing: true
+
+# Test mit Firemanager
+firemanager_all:
+  ical_url: https://www.firemanager.de/portal/kalender/wG7BKD0baN.ics
+  timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
+  alarms:
+    clear_existing: true
