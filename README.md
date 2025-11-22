@@ -5,6 +5,8 @@ See comments inside [config.yml](app/googlecalendar.yml) for use cases.
 > With 2024 switched to Firemanager as source. Thereby we do not need to split the calendars anymore.  
 > Anyhow using this solution to manage alarm and bypassing issue with timezones.
 
+> Decommissioned end of 2025 as Firemanager now syncs everything to FE2
+
 ## Acknowledgments and Thanks
 The solution is based on the following project: [darkphnx/ical-filter-proxy](https://github.com/darkphnx/ical-filter-proxy)
 
