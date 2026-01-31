@@ -1,96 +1,13 @@
-# Wir haben in der aktiven Wehr zwei Löschzüge, sowie eine Jugendgruppe und einige Spezialübungen.
-# Jeder soll jeden Termin genau einmal im aPager haben.
-# Jeder soll nur die Übungsbenachrichtigungen bekommen, die für ihn relevant sind (je nach Zug-Zugehörigkeit).
-
-# Kalender mit Jugendübungen ohne Benachrichtigungen
-ffw_youth_drills_no_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/h9SZIOjsOt.ics
-   api_key: ${ICAL_FILTER_PROXY_API_KEY}
-   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
-   alarms:
-     clear_existing: true
-     
-# Kalender mit Jugendübungen mit Benachrichtigungen
-ffw_youth_drills_with_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/h9SZIOjsOt.ics
-   api_key: ${ICAL_FILTER_PROXY_API_KEY}
-   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
-   alarms:
-     clear_existing: true
-     triggers:
-       - 1 hour     
-
-# Kalender ohne Übungen und ohne Benachrichtigungen
-ffw_no_drills_no_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/FYJKmKmOT2.ics
+zug1_alternative:
+   ical_url: https://www.firemanager.de/portal/kalender/4dGfjpWDEy.ics
    api_key: ${ICAL_FILTER_PROXY_API_KEY}
    timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    alarms:
      clear_existing: true
 
-# Kalender mit Übungen für beide Züge mit Benachrichtigungen
-ffw_only_collective_drills_with_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/3wTRrjqNBD.ics
+zug2_alternative:
+   ical_url: https://www.firemanager.de/portal/kalender/xu3j5KMSt7.ics
    api_key: ${ICAL_FILTER_PROXY_API_KEY}
    timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
    alarms:
      clear_existing: true
-     triggers:
-       - 1 day
-       - 5 days
-       
-# Kalender mit speziellen Übungen außerhalb von Zug- und Jugendübungen
-ffw_only_special_drills_with_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/0lv1CIa0dB.ics
-   api_key: ${ICAL_FILTER_PROXY_API_KEY}
-   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
-   alarms:
-     clear_existing: true
-     triggers:
-       - 1 day
-       - 5 days
-
-# Kalender mit Übungen für den ersten Zug mit Benachrichtigungen
-ffw_drills_brigade_1_with_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/CW2kyQXsYm.ics
-   api_key: ${ICAL_FILTER_PROXY_API_KEY}
-   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
-   alarms:
-     clear_existing: true
-     triggers:
-       - 1 day
-       - 5 days
-       
-# Kalender mit Übungen für den ersten Zug ohne Benachrichtigungen
-ffw_drills_brigade_1_no_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/CW2kyQXsYm.ics
-   api_key: ${ICAL_FILTER_PROXY_API_KEY}
-   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
-   alarms:
-     clear_existing: true
-       
-# Kalender mit Übungen für den zweiten Zug mit Benachrichtigungen
-ffw_drills_brigade_2_with_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/6tETQl7ydQ.ics
-   api_key: ${ICAL_FILTER_PROXY_API_KEY}
-   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
-   alarms:
-     clear_existing: true
-     triggers:
-       - 1 day
-       - 5 days
-       
-# Kalender mit Übungen für den zweiten Zug ohne Benachrichtigungen
-ffw_drills_brigade_2_no_alarms:
-   ical_url: https://www.firemanager.de/portal/kalender/6tETQl7ydQ.ics
-   api_key: ${ICAL_FILTER_PROXY_API_KEY}
-   timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
-   alarms:
-     clear_existing: true
-
-# Test mit Firemanager
-firemanager_all:
-  ical_url: https://www.firemanager.de/portal/kalender/wG7BKD0baN.ics
-  timezone: ${ICAL_FILTER_PROXY_TIMEZONE}
-  alarms:
-    clear_existing: true
