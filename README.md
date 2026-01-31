@@ -7,6 +7,8 @@ See comments inside [config.yml](app/googlecalendar.yml) for use cases.
 
 > Decommissioned end of 2025 as Firemanager now syncs everything to FE2
 
+> Reactivated in 2026 :) We need optional appointments for different brigades without notifications.
+
 ## Acknowledgments and Thanks
 The solution is based on the following project: [darkphnx/ical-filter-proxy](https://github.com/darkphnx/ical-filter-proxy)
 
