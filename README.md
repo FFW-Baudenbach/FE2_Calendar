@@ -23,7 +23,7 @@ The following PRs were created to enable this project:
 ## How it works
 This repository builds a docker container on DockerHub:
 * Based on latest version of ```ical-filter-proxy``` container
-* Added our specific [config.yml](app/googlecalendar.yml)
+* Added our specific [config.yml](app/firemanager.yml)
 * Added default environment variables
 
 ## How to use
